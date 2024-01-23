@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Livvic", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0C111B;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 166, 0, 0.44);
+  border-radius: 20px;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  z-index: 100;
+  background: #0C111B;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2823529412);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.logo h3 {
+  margin-left: 10px;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+
+.burger__btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.set {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.sort {
+  margin-left: 73px;
+}
+
+.sort__hidden {
+  display: none;
+  margin-left: 0;
+}
+
+select, option {
+  background: #0C111B;
+  color: #fff;
+  font-size: 20px;
+}
+
+.search__inp {
+  padding-left: 5px;
+  color: #fff;
+  max-width: 261px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.search__inp::-moz-placeholder {
+  color: #fff;
+}
+
+.search__inp:-ms-input-placeholder {
+  color: #fff;
+}
+
+.search__inp::placeholder {
+  color: #fff;
+}
+
+.login__btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.nav__right button {
+  margin-left: 30px;
+}
+
+.burger__icon {
+  margin-left: 0;
+}
+
+.sub__btn {
+  padding: 5px 18px;
+  border-radius: 26px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+@media (max-width: 975px) {
+  .sub__btn, .login__btn {
+    display: none;
+  }
+}
+@media (max-width: 743px) {
+  .sort {
+    display: none;
+  }
+  .sort__hidden {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+  }
+  .burger__btn {
+    margin-left: 0;
+  }
+  .burger__icon {
+    margin-left: 0;
+  }
+}
+@media (max-width: 686px) {
+  .header {
+    padding-top: 0;
+  }
+}
+@media (max-width: 430px) {
+  .sort__hidden {
+    padding: 20px;
+  }
+  .logo {
+    display: none;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .nav__right {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.movies {
+  background: #0C111B;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.movies__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.iframe {
+  width: 100%;
+  height: 262px;
+}
+
+.movies__card {
+  width: 220px;
+}
+.movies__card img {
+  width: 100%;
+  border-radius: 15px;
+}
+.movies__card img:hover {
+  opacity: 0.6;
+}
+.movies__card a {
+  color: #0C111B;
+}
+.movies__card .card__info {
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.movies__item {
+  margin-top: 90px;
+}
+
+.card__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+}
+
+.modal {
+  color: #fff;
+}
+
+.modal-header, .modal-body, .modal-footer {
+  background: #0C111B;
+}
+
+@media (max-width: 686px) {
+  .movies {
+    padding-top: 80px;
+  }
+  .movies__card {
+    width: 100%;
+  }
+  .movies__card h4 {
+    font-size: 40px;
+  }
+  .movies__card i::before {
+    border-radius: 50%;
+    padding: 10px;
+    background: red;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  .movies__list {
+    justify-content: center;
+  }
+}
+@media (max-width: 479px) {
+  .movies__card {
+    width: 100%;
+  }
+}
+.hero {
+  padding-top: 75px;
+  background: #0C111B;
+  height: 702px;
+  overflow: hidden;
+}
+.hero img {
+  height: 702px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 916px) {
+  .hero {
+    display: none;
+  }
+}/*# sourceMappingURL=style.min.css.map */

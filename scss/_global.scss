@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Livvic', sans-serif;
+                    
+}
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $darkblack;     
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 166, 0, 0.44); 
+  border-radius: 20px;
+}
+ul, ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
